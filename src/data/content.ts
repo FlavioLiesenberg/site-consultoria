@@ -1,0 +1,320 @@
+import {
+  Activity,
+  AlertTriangle,
+  BadgeDollarSign,
+  Banknote,
+  BarChart3,
+  Briefcase,
+  Building2,
+  CreditCard,
+  Gauge,
+  HandCoins,
+  Handshake,
+  LineChart,
+  PieChart,
+  Scale,
+  ShieldCheck,
+  Target,
+  TrendingDown,
+  Users,
+  type LucideIcon,
+} from "lucide-react";
+
+export const site = {
+  brand: "L2 ACADEMY",
+  brandSuffix: "Flávio Liesenberg Consulting",
+  whatsapp: "5511999999999",
+  whatsappMessage:
+    "Olá, gostaria de agendar um Diagnóstico de Caixa com a L2 Academy.",
+  email: "contato@l2academy.com.br",
+  city: "São Paulo — SP | Atendimento nacional",
+};
+
+export const navLinks = [
+  { label: "Soluções", href: "#solucoes" },
+  { label: "Metodologia", href: "#metodologia" },
+  { label: "Casos", href: "#casos" },
+  { label: "Sobre", href: "#sobre" },
+];
+
+export const hero = {
+  eyebrow: "Reestruturação Financeira • CFO as a Service",
+  headline:
+    "Estancamos o sangramento de caixa e devolvemos a previsibilidade financeira da sua empresa.",
+  subheadline:
+    "CFO as a Service e Reestruturação Estratégica (Turnaround) para empresas que faturam bem, mas não enxergam a cor do dinheiro.",
+  primaryCta: "Agendar Diagnóstico sem Custo",
+  secondaryCta: "Conhecer Soluções",
+  badges: [
+    { icon: HandCoins, label: "+R$ 50M em Passivos Renegociados" },
+    { icon: Briefcase, label: "Gestão Interina de Elite" },
+    { icon: Users, label: "Atendimento Presencial e Remoto" },
+  ] satisfies { icon: LucideIcon; label: string }[],
+  metrics: [
+    { value: "+R$ 50M", label: "Passivos renegociados" },
+    { value: "14 dias", label: "Para o diagnóstico UTI" },
+    { value: "20+ anos", label: "Em cenários críticos" },
+    { value: "3 setores", label: "Saúde, serviços e varejo" },
+  ],
+};
+
+export const pains = {
+  title: "Você reconhece algum destes cenários na sua operação?",
+  subtitle:
+    "Quando o caixa aperta, o problema raramente é falta de faturamento — é falta de gestão financeira profissional.",
+  items: [
+    {
+      icon: AlertTriangle,
+      title: "Caixa no aperto mesmo faturando alto",
+      description:
+        "O faturamento cresce, mas o saldo bancário nunca acompanha. O lucro existe no papel e desaparece no extrato.",
+    },
+    {
+      icon: PieChart,
+      title: "Falta de clareza nas margens e no CMV",
+      description:
+        "Sem DRE gerencial confiável, você vende produtos e serviços que destroem margem sem perceber.",
+    },
+    {
+      icon: TrendingDown,
+      title: "Inadimplência alta e falta de régua de cobrança",
+      description:
+        "Recebíveis atrasados financiam o cliente e sufocam o seu capital de giro mês após mês.",
+    },
+    {
+      icon: CreditCard,
+      title: "Dependência de empréstimos e cheque especial",
+      description:
+        "A dívida rola, os juros comem a operação e cada mês começa com o caixa já comprometido.",
+    },
+  ] satisfies { icon: LucideIcon; title: string; description: string }[],
+};
+
+export type Solution = {
+  id: string;
+  icon: LucideIcon;
+  title: string;
+  tagline: string;
+  description: string;
+  deliverables: string[];
+};
+
+export const solutions: { title: string; subtitle: string; items: Solution[] } = {
+  title: "Soluções desenhadas para retomar o controle",
+  subtitle:
+    "Atuação sênior, mão na massa, com responsabilidade sobre número e resultado — não apenas relatório.",
+  items: [
+    {
+      id: "cfo",
+      icon: LineChart,
+      title: "CFO as a Service",
+      tagline: "Direção financeira sênior sem custo de estrutura fixa",
+      description:
+        "Assumimos a direção financeira da empresa em regime interino, com rotina, cadência e responsabilidade sobre os números.",
+      deliverables: [
+        "Direção financeira interina (Interim CFO)",
+        "DRE Gerencial por unidade de negócio",
+        "Fluxo de caixa projetado (13 semanas)",
+        "Comitê financeiro semanal com o dono",
+      ],
+    },
+    {
+      id: "turnaround",
+      icon: Activity,
+      title: "Turnaround & Reestruturação",
+      tagline: "Estancar o sangramento e reorganizar o passivo",
+      description:
+        "Mapeamento completo da dívida, priorização de credores e negociação estruturada para devolver oxigênio ao caixa.",
+      deliverables: [
+        "Auditoria completa de passivos",
+        "Renegociação com bancos e fornecedores",
+        "Negociação de haircut e alongamento",
+        "Controle de burn rate semanal",
+      ],
+    },
+    {
+      id: "ma",
+      icon: Scale,
+      title: "M&A e Valuation de Carteiras",
+      tagline: "Vender ativo bom pelo preço certo",
+      description:
+        "Avaliação técnica e condução de venda de ativos e carteiras de clientes com segurança jurídica e financeira.",
+      deliverables: [
+        "Valuation de carteiras e unidades",
+        "Preparação de data room e dossiê",
+        "Condução de negociação com compradores",
+        "Estruturação de earn-out e garantias",
+      ],
+    },
+    {
+      id: "governance",
+      icon: ShieldCheck,
+      title: "Blindagem e Governance",
+      tagline: "Processo, compliance e autonomia do time",
+      description:
+        "Estruturamos controles, alçadas e rotinas para que a empresa não dependa do heroísmo do dono.",
+      deliverables: [
+        "Desenho de processos e alçadas",
+        "Compliance financeiro e antifraude",
+        "Formação e gestão do time financeiro",
+        "Dashboards e rotinas de conselho",
+      ],
+    },
+  ],
+};
+
+export const methodology = {
+  title: "Metodologia de ataque em 4 passos",
+  subtitle:
+    "Um caminho claro, com entregas em cada etapa — do socorro imediato à governança definitiva.",
+  steps: [
+    {
+      icon: Gauge,
+      step: "Passo 01",
+      title: "Diagnóstico UTI",
+      duration: "Primeiros 14 dias",
+      description:
+        "Mapeamento de liquidez, identificação e estancamento dos vazamentos de caixa em até 14 dias.",
+    },
+    {
+      icon: Banknote,
+      step: "Passo 02",
+      title: "Estabilização de Caixa",
+      duration: "Dias 15 a 60",
+      description:
+        "Renegociação de fornecedores e credores, controle do burn rate e reconstrução do capital de giro.",
+    },
+    {
+      icon: BarChart3,
+      step: "Passo 03",
+      title: "Reestruturação Operacional",
+      duration: "Mês 3 ao 6",
+      description:
+        "Precificação correta, recuperação de margem, corte de desperdício e gestão interina das áreas críticas.",
+    },
+    {
+      icon: Target,
+      step: "Passo 04",
+      title: "Governança & Escala",
+      duration: "Mês 6 em diante",
+      description:
+        "Rotinas de conselho, dashboards gerenciais e transferência de autonomia definitiva para o dono e o time.",
+    },
+  ] satisfies {
+    icon: LucideIcon;
+    step: string;
+    title: string;
+    duration: string;
+    description: string;
+  }[],
+};
+
+export const cases = {
+  title: "Casos e resultados",
+  subtitle:
+    "Números reais de operações em cenário crítico. Nomes preservados por acordo de confidencialidade.",
+  items: [
+    {
+      icon: Building2,
+      sector: "Rede de saúde • 4 unidades",
+      headline: "R$ 18M de passivo reestruturado em 7 meses",
+      result: "Haircut médio de 32% e caixa positivo a partir do 4º mês.",
+    },
+    {
+      icon: BadgeDollarSign,
+      sector: "Varejo multimarcas",
+      headline: "Margem bruta de 21% para 34%",
+      result: "Revisão de precificação, mix e CMV com corte de SKUs deficitários.",
+    },
+    {
+      icon: Handshake,
+      sector: "Empresa de serviços B2B",
+      headline: "Venda de carteira com valuation 2,4x acima da oferta inicial",
+      result: "Estruturação de dossiê, concorrência entre compradores e earn-out.",
+    },
+  ] satisfies {
+    icon: LucideIcon;
+    sector: string;
+    headline: string;
+    result: string;
+  }[],
+  testimonials: [
+    {
+      quote:
+        "Em duas semanas entendemos, pela primeira vez, para onde o dinheiro estava indo. Em seis meses saímos do cheque especial.",
+      author: "Sócio-fundador",
+      role: "Rede de clínicas — SP",
+    },
+    {
+      quote:
+        "O Flávio senta na cadeira de CFO e assume o número. Não é consultoria de slide, é execução dentro da operação.",
+      author: "CEO",
+      role: "Distribuidora de serviços — RS",
+    },
+    {
+      quote:
+        "A renegociação com credores devolveu o fôlego que precisávamos para voltar a crescer com segurança.",
+      author: "Diretora financeira",
+      role: "Varejo — PR",
+    },
+  ],
+};
+
+export const about = {
+  eyebrow: "Sobre o consultor",
+  name: "Flávio Liesenberg",
+  role: "Consultor Sênior • Interim Manager & CFO as a Service",
+  paragraphs: [
+    "Mais de duas décadas conduzindo operações financeiras em cenários críticos, atuando como Interim Manager e CFO em empresas de saúde, serviços e varejo.",
+    "Especialista em reestruturação de passivos, recuperação de margem e implantação de governança financeira em empresas familiares e de médio porte que cresceram mais rápido do que sua gestão.",
+    "Atuação hands-on: entra na operação, assume a cadeira, reorganiza o time e sai deixando processo, rotina e autonomia instalados.",
+  ],
+  highlights: [
+    "Interim CFO em operações de R$ 20M a R$ 300M de faturamento",
+    "+R$ 50M em passivos auditados e renegociados",
+    "Condução de M&A e valuation de carteiras de clientes",
+    "Implantação de governança e comitês financeiros",
+  ],
+};
+
+export const form = {
+  title: "Solicite seu Diagnóstico Estratégico",
+  subtitle:
+    "Análise inicial sem custo e sem compromisso. Retornamos em até 1 dia útil com uma leitura objetiva do seu cenário.",
+  revenueOptions: [
+    { value: "ate-100k", label: "Até R$ 100 mil" },
+    { value: "100k-500k", label: "R$ 100 mil a R$ 500 mil" },
+    { value: "500k-2m", label: "R$ 500 mil a R$ 2 milhões" },
+    { value: "acima-2m", label: "Acima de R$ 2 milhões" },
+  ],
+  challengeOptions: [
+    { value: "caixa", label: "Caixa / Liquidez" },
+    { value: "dividas", label: "Dívidas e credores" },
+    { value: "margem", label: "Margem e precificação" },
+    { value: "outros", label: "Outros" },
+  ],
+  submitLabel: "Solicitar Diagnóstico Estratégico",
+  trust: [
+    "Sigilo absoluto — NDA disponível",
+    "Sem custo e sem compromisso",
+    "Resposta em até 1 dia útil",
+  ],
+};
+
+export const footer = {
+  columns: [
+    {
+      title: "Navegação",
+      links: navLinks,
+    },
+    {
+      title: "Soluções",
+      links: solutions.items.map((s) => ({ label: s.title, href: "#solucoes" })),
+    },
+  ],
+  confidentiality:
+    "Todas as informações compartilhadas são tratadas sob sigilo profissional. Contratos de confidencialidade (NDA) disponíveis desde o primeiro contato.",
+  lgpd:
+    "Tratamos dados pessoais conforme a Lei Geral de Proteção de Dados (LGPD — Lei 13.709/2018), exclusivamente para contato comercial e qualificação de atendimento.",
+  rights: "© 2026 L2 Academy — Flávio Liesenberg Consulting. Todos os direitos reservados.",
+};
