@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-3">
-              <span className="flex size-9 items-center justify-center rounded-md bg-[image:var(--gradient-emerald)] text-primary-foreground">
+              <span className="flex size-9 items-center justify-center rounded-md bg-brand text-brand-foreground">
                 <TrendingUp className="size-5" />
               </span>
               <span className="font-display text-sm font-semibold tracking-[0.22em]">

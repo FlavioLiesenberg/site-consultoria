@@ -19,7 +19,7 @@ export function Hero() {
             {hero.eyebrow}
           </span>
           <h1 className="mt-6 text-4xl leading-[1.08] font-semibold text-balance sm:text-5xl lg:text-6xl">
-            Estancamos o <span className="text-gradient-emerald">sangramento de caixa</span> e
+            Estancamos o <span className="text-brand">sangramento de caixa</span> e
             devolvemos a previsibilidade financeira da sua empresa.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">

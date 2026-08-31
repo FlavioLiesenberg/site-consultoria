@@ -23,7 +23,7 @@ export function Solutions() {
                 <TabsTrigger
                   key={item.id}
                   value={item.id}
-                  className="flex items-center gap-2 px-3 py-2.5 text-[0.8rem] font-medium data-[state=active]:bg-[image:var(--gradient-emerald)] data-[state=active]:text-primary-foreground"
+                  className="flex items-center gap-2 px-3 py-2.5 text-[0.8rem] font-medium data-[state=active]:bg-brand data-[state=active]:text-primary-foreground"
                 >
                   <item.icon className="size-4" />
                   {item.title}
