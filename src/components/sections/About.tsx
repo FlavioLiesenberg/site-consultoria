@@ -10,10 +10,7 @@ export function About() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:gap-16 lg:px-8">
         <Reveal>
           <div className="relative">
-            <div
-              className="absolute -inset-3 rounded-2xl bg-[image:var(--gradient-emerald)] opacity-15 blur-2xl"
-              aria-hidden
-            />
+            <div className="absolute -inset-2 rounded-2xl border border-brand/25" aria-hidden />
             <img
               src={consultantPhoto}
               alt="Flávio Liesenberg, consultor sênior em reestruturação financeira"
