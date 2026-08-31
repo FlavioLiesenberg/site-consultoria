@@ -38,9 +38,9 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  --color-emerald: var(--emerald);
-  --color-emerald-foreground: var(--emerald-foreground);
-  --color-teal: var(--teal);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-foreground: var(--brand-foreground);
   --color-warning: var(--warning);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
