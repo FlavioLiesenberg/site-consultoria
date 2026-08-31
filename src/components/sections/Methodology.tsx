@@ -24,11 +24,11 @@ export function Methodology() {
           {methodology.steps.map((step, i) => (
             <Reveal key={step.title} delay={i * 110}>
               <li className="relative h-full list-none">
-                <span className="relative z-10 flex size-12 items-center justify-center rounded-full border border-emerald/40 bg-background text-emerald">
+                <span className="relative z-10 flex size-12 items-center justify-center rounded-full border border-brand/40 bg-background text-brand">
                   <step.icon className="size-5" />
                 </span>
                 <div className="mt-6 rounded-xl border border-border bg-card/60 p-6">
-                  <p className="text-xs font-semibold tracking-[0.16em] text-emerald uppercase">
+                  <p className="text-xs font-semibold tracking-[0.16em] text-brand uppercase">
                     {step.step}
                   </p>
                   <h3 className="mt-2 text-lg font-semibold">{step.title}</h3>

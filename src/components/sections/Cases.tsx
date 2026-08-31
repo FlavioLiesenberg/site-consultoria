@@ -18,7 +18,7 @@ export function Cases() {
             <Reveal key={item.headline} delay={i * 90}>
               <Card className="h-full border-border bg-card/70 transition-transform duration-300 hover:-translate-y-1">
                 <CardContent className="flex h-full flex-col p-7">
-                  <item.icon className="size-5 text-emerald" />
+                  <item.icon className="size-5 text-brand" />
                   <p className="mt-5 text-xs tracking-[0.14em] text-muted-foreground uppercase">
                     {item.sector}
                   </p>
@@ -38,7 +38,7 @@ export function Cases() {
           {cases.testimonials.map((t, i) => (
             <Reveal key={t.quote} delay={i * 90}>
               <figure className="surface-panel h-full rounded-xl p-7">
-                <Quote className="size-5 text-teal" />
+                <Quote className="size-5 text-brand" />
                 <blockquote className="mt-4 text-sm leading-relaxed text-foreground">
                   “{t.quote}”
                 </blockquote>

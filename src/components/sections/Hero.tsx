@@ -19,7 +19,7 @@ export function Hero() {
             {hero.eyebrow}
           </span>
           <h1 className="mt-6 text-4xl leading-[1.08] font-semibold text-balance sm:text-5xl lg:text-6xl">
-            Estancamos o <span className="text-gradient-emerald">sangramento de caixa</span> e
+            Estancamos o <span className="text-brand">sangramento de caixa</span> e
             devolvemos a previsibilidade financeira da sua empresa.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
@@ -46,7 +46,7 @@ export function Hero() {
                 key={badge.label}
                 className="inline-flex items-center gap-2.5 rounded-full border border-border bg-surface/70 px-4 py-2 backdrop-blur"
               >
-                <badge.icon className="size-4 text-emerald" />
+                <badge.icon className="size-4 text-brand" />
                 <span className="text-sm font-medium text-foreground">{badge.label}</span>
               </div>
             ))}
@@ -57,7 +57,7 @@ export function Hero() {
           <dl className="surface-panel grid grid-cols-2 gap-px overflow-hidden rounded-xl lg:grid-cols-4">
             {hero.metrics.map((metric) => (
               <div key={metric.label} className="bg-surface/40 px-6 py-7">
-                <dt className="text-2xl font-semibold text-emerald lg:text-3xl">{metric.value}</dt>
+                <dt className="text-2xl font-semibold text-brand lg:text-3xl">{metric.value}</dt>
                 <dd className="mt-1.5 text-xs tracking-wide text-muted-foreground uppercase">
                   {metric.label}
                 </dd>

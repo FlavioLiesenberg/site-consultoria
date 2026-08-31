@@ -10,10 +10,7 @@ export function About() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:gap-16 lg:px-8">
         <Reveal>
           <div className="relative">
-            <div
-              className="absolute -inset-3 rounded-2xl bg-[image:var(--gradient-emerald)] opacity-15 blur-2xl"
-              aria-hidden
-            />
+            <div className="absolute -inset-2 rounded-2xl border border-brand/25" aria-hidden />
             <img
               src={consultantPhoto}
               alt="Flávio Liesenberg, consultor sênior em reestruturação financeira"
@@ -26,7 +23,7 @@ export function About() {
               <p className="text-xs tracking-[0.16em] text-muted-foreground uppercase">
                 Interim CFO
               </p>
-              <p className="mt-1 text-lg font-semibold text-emerald">+20 anos em turnaround</p>
+              <p className="mt-1 text-lg font-semibold text-brand">+20 anos em turnaround</p>
             </div>
           </div>
         </Reveal>
@@ -34,7 +31,7 @@ export function About() {
         <Reveal delay={120}>
           <span className="eyebrow">{about.eyebrow}</span>
           <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">{about.name}</h2>
-          <p className="mt-2 text-sm font-medium text-emerald">{about.role}</p>
+          <p className="mt-2 text-sm font-medium text-brand">{about.role}</p>
 
           <div className="mt-6 space-y-4">
             {about.paragraphs.map((p) => (
@@ -47,7 +44,7 @@ export function About() {
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
             {about.highlights.map((h) => (
               <li key={h} className="flex items-start gap-3">
-                <Check className="mt-0.5 size-4 shrink-0 text-emerald" />
+                <Check className="mt-0.5 size-4 shrink-0 text-brand" />
                 <span className="text-sm text-foreground">{h}</span>
               </li>
             ))}

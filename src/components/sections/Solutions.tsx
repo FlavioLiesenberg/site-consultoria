@@ -23,7 +23,7 @@ export function Solutions() {
                 <TabsTrigger
                   key={item.id}
                   value={item.id}
-                  className="flex items-center gap-2 px-3 py-2.5 text-[0.8rem] font-medium data-[state=active]:bg-[image:var(--gradient-emerald)] data-[state=active]:text-primary-foreground"
+                  className="flex items-center gap-2 px-3 py-2.5 text-[0.8rem] font-medium data-[state=active]:bg-brand data-[state=active]:text-primary-foreground"
                 >
                   <item.icon className="size-4" />
                   {item.title}
@@ -35,11 +35,11 @@ export function Solutions() {
               <TabsContent key={item.id} value={item.id} className="mt-6">
                 <div className="surface-panel grid gap-10 rounded-2xl p-7 lg:grid-cols-2 lg:p-10">
                   <div>
-                    <span className="inline-flex size-12 items-center justify-center rounded-xl border border-emerald/30 bg-emerald/10 text-emerald">
+                    <span className="inline-flex size-12 items-center justify-center rounded-xl border border-brand/30 bg-brand/10 text-brand">
                       <item.icon className="size-6" />
                     </span>
                     <h3 className="mt-6 text-2xl font-semibold">{item.title}</h3>
-                    <p className="mt-2 text-sm font-medium text-emerald">{item.tagline}</p>
+                    <p className="mt-2 text-sm font-medium text-brand">{item.tagline}</p>
                     <p className="mt-4 leading-relaxed text-muted-foreground">{item.description}</p>
                     <Button variant="hero" size="lg" className="mt-7" asChild>
                       <a href="#contato">Falar sobre esta solução</a>
@@ -52,7 +52,7 @@ export function Solutions() {
                         key={d}
                         className="flex items-start gap-3 rounded-lg border border-border bg-background/40 px-4 py-3.5"
                       >
-                        <Check className="mt-0.5 size-4 shrink-0 text-emerald" />
+                        <Check className="mt-0.5 size-4 shrink-0 text-brand" />
                         <span className="text-sm text-foreground">{d}</span>
                       </li>
                     ))}

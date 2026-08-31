@@ -5,8 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * L2 Academy design system — "Wall Street / Big Tech" executive.
- * Deep navy + slate surfaces, emerald/teal accents for liquidity & profit.
+ * L2 Academy design system — navy institucional.
+ * Fundos navy profundos, acento azul institucional. Cores sólidas, sem gradientes de marca.
  * All colors in oklch. Never hardcode colors in components.
  */
 
@@ -19,8 +19,8 @@
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
 
-  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Urbanist", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Epilogue", ui-sans-serif, system-ui, sans-serif;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -38,9 +38,9 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  --color-emerald: var(--emerald);
-  --color-emerald-foreground: var(--emerald-foreground);
-  --color-teal: var(--teal);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-foreground: var(--brand-foreground);
   --color-warning: var(--warning);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
@@ -67,75 +67,57 @@
 :root {
   --radius: 0.5rem;
 
-  --background: oklch(0.17 0.03 258);
-  --foreground: oklch(0.97 0.005 250);
-  --surface: oklch(0.21 0.032 259);
-  --surface-foreground: oklch(0.97 0.005 250);
-  --card: oklch(0.22 0.031 259);
-  --card-foreground: oklch(0.97 0.005 250);
-  --popover: oklch(0.21 0.032 259);
-  --popover-foreground: oklch(0.97 0.005 250);
+  --background: oklch(0.21 0.062 264);
+  --foreground: oklch(0.95 0.008 250);
+  --surface: oklch(0.27 0.055 260);
+  --surface-foreground: oklch(0.95 0.008 250);
+  --card: oklch(0.28 0.053 260);
+  --card-foreground: oklch(0.95 0.008 250);
+  --popover: oklch(0.27 0.055 260);
+  --popover-foreground: oklch(0.95 0.008 250);
 
-  --primary: oklch(0.72 0.15 168);
-  --primary-foreground: oklch(0.17 0.04 200);
+  --primary: oklch(0.56 0.088 248);
+  --primary-foreground: oklch(0.97 0.006 250);
 
-  --secondary: oklch(0.27 0.035 259);
-  --secondary-foreground: oklch(0.96 0.005 250);
+  --secondary: oklch(0.33 0.05 258);
+  --secondary-foreground: oklch(0.95 0.008 250);
 
-  --muted: oklch(0.26 0.032 259);
-  --muted-foreground: oklch(0.74 0.025 255);
+  --muted: oklch(0.31 0.048 258);
+  --muted-foreground: oklch(0.76 0.02 250);
 
-  --accent: oklch(0.3 0.05 240);
-  --accent-foreground: oklch(0.97 0.005 250);
+  --accent: oklch(0.35 0.06 252);
+  --accent-foreground: oklch(0.96 0.008 250);
 
-  --emerald: oklch(0.74 0.16 165);
-  --emerald-foreground: oklch(0.18 0.04 200);
-  --teal: oklch(0.72 0.11 200);
-  --warning: oklch(0.79 0.15 78);
+  --brand: oklch(0.56 0.088 248);
+  --brand-strong: oklch(0.48 0.082 250);
+  --brand-foreground: oklch(0.98 0.005 250);
+  --warning: oklch(0.79 0.13 78);
 
-  --destructive: oklch(0.62 0.2 25);
+  --destructive: oklch(0.6 0.19 25);
   --destructive-foreground: oklch(0.98 0.005 250);
 
-  --border: oklch(0.32 0.03 258);
-  --border-strong: oklch(0.42 0.035 250);
-  --input: oklch(0.3 0.03 258);
-  --ring: oklch(0.72 0.15 168);
+  --border: oklch(0.35 0.05 256);
+  --border-strong: oklch(0.46 0.06 250);
+  --input: oklch(0.34 0.05 256);
+  --ring: oklch(0.56 0.088 248);
 
-  --chart-1: oklch(0.74 0.16 165);
-  --chart-2: oklch(0.72 0.11 200);
-  --chart-3: oklch(0.6 0.09 250);
-  --chart-4: oklch(0.79 0.15 78);
-  --chart-5: oklch(0.62 0.2 25);
+  --chart-1: oklch(0.56 0.088 248);
+  --chart-2: oklch(0.68 0.07 245);
+  --chart-3: oklch(0.44 0.07 255);
+  --chart-4: oklch(0.79 0.13 78);
+  --chart-5: oklch(0.6 0.19 25);
 
-  --sidebar: oklch(0.19 0.03 258);
-  --sidebar-foreground: oklch(0.97 0.005 250);
-  --sidebar-primary: oklch(0.74 0.16 165);
-  --sidebar-primary-foreground: oklch(0.18 0.04 200);
-  --sidebar-accent: oklch(0.27 0.035 259);
-  --sidebar-accent-foreground: oklch(0.97 0.005 250);
-  --sidebar-border: oklch(0.32 0.03 258);
-  --sidebar-ring: oklch(0.72 0.15 168);
+  --sidebar: oklch(0.23 0.06 263);
+  --sidebar-foreground: oklch(0.95 0.008 250);
+  --sidebar-primary: oklch(0.56 0.088 248);
+  --sidebar-primary-foreground: oklch(0.98 0.005 250);
+  --sidebar-accent: oklch(0.33 0.05 258);
+  --sidebar-accent-foreground: oklch(0.95 0.008 250);
+  --sidebar-border: oklch(0.35 0.05 256);
+  --sidebar-ring: oklch(0.56 0.088 248);
 
-  --gradient-hero: radial-gradient(
-      110% 80% at 12% 0%,
-      color-mix(in oklab, var(--teal) 16%, transparent) 0%,
-      transparent 60%
-    ),
-    radial-gradient(
-      90% 70% at 95% 10%,
-      color-mix(in oklab, var(--emerald) 12%, transparent) 0%,
-      transparent 55%
-    ),
-    linear-gradient(180deg, oklch(0.15 0.03 258) 0%, var(--background) 100%);
-  --gradient-emerald: linear-gradient(135deg, var(--emerald), var(--teal));
-  --gradient-panel: linear-gradient(
-    160deg,
-    color-mix(in oklab, var(--surface) 92%, var(--teal) 8%),
-    var(--surface)
-  );
-  --shadow-elevated: 0 24px 60px -28px oklch(0 0 0 / 0.75);
-  --shadow-glow: 0 0 0 1px color-mix(in oklab, var(--emerald) 35%, transparent),
-    0 18px 50px -22px color-mix(in oklab, var(--emerald) 45%, transparent);
+  --shadow-elevated: 0 20px 48px -30px oklch(0 0 0 / 0.7);
+
 }
 
 .dark {
@@ -168,47 +150,41 @@
   }
 
   ::selection {
-    background: color-mix(in oklab, var(--emerald) 35%, transparent);
+    background: color-mix(in oklab, var(--brand) 45%, transparent);
   }
 }
 
 @utility surface-panel {
-  background: var(--gradient-panel);
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-elevated);
 }
 
 @utility hero-canvas {
-  background: var(--gradient-hero);
-}
-
-@utility text-gradient-emerald {
-  background: var(--gradient-emerald);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  background: var(--color-background);
+  border-bottom: 1px solid var(--color-border);
 }
 
 @utility grid-lines {
   background-image: linear-gradient(
       to right,
-      color-mix(in oklab, var(--border) 55%, transparent) 1px,
+      color-mix(in oklab, var(--border) 40%, transparent) 1px,
       transparent 1px
     ),
     linear-gradient(
       to bottom,
-      color-mix(in oklab, var(--border) 55%, transparent) 1px,
+      color-mix(in oklab, var(--border) 40%, transparent) 1px,
       transparent 1px
     );
-  background-size: 64px 64px;
+  background-size: 80px 80px;
 }
 
 @utility eyebrow {
   font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-emerald);
+  color: var(--color-brand);
 }
 
 @utility reveal {
