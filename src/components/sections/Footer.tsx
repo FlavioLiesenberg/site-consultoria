@@ -20,11 +20,11 @@ export function Footer() {
             </p>
             <div className="mt-5 space-y-2 text-sm text-muted-foreground">
               <p className="flex items-center gap-2">
-                <Mail className="size-4 text-emerald" />
+                <Mail className="size-4 text-brand" />
                 {site.email}
               </p>
               <p className="flex items-center gap-2">
-                <MapPin className="size-4 text-emerald" />
+                <MapPin className="size-4 text-brand" />
                 {site.city}
               </p>
             </div>
@@ -40,7 +40,7 @@ export function Footer() {
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className="text-sm text-muted-foreground transition-colors hover:text-emerald"
+                      className="text-sm text-muted-foreground transition-colors hover:text-brand"
                     >
                       {link.label}
                     </a>

@@ -58,14 +58,14 @@ export function ContactForm() {
           <ul className="mt-8 space-y-3">
             {form.trust.map((t) => (
               <li key={t} className="flex items-center gap-3 text-sm text-foreground">
-                <CheckCircle2 className="size-4 text-emerald" />
+                <CheckCircle2 className="size-4 text-brand" />
                 {t}
               </li>
             ))}
           </ul>
 
           <div className="mt-8 flex items-start gap-3 rounded-lg border border-border bg-surface/50 p-4">
-            <Lock className="mt-0.5 size-4 shrink-0 text-teal" />
+            <Lock className="mt-0.5 size-4 shrink-0 text-brand" />
             <p className="text-xs leading-relaxed text-muted-foreground">
               Seus dados são utilizados apenas para contato comercial e qualificação, conforme a
               LGPD. Nenhuma informação é compartilhada com terceiros.
@@ -77,7 +77,7 @@ export function ContactForm() {
           <div className="surface-panel rounded-2xl p-7 lg:p-9">
             {done ? (
               <div className="flex flex-col items-start gap-4 py-6">
-                <CheckCircle2 className="size-10 text-emerald" />
+                <CheckCircle2 className="size-10 text-brand" />
                 <h3 className="text-2xl font-semibold">Recebemos sua solicitação</h3>
                 <p className="text-muted-foreground">
                   Nossa equipe entrará em contato em até 1 dia útil para agendar o Diagnóstico de
