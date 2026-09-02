@@ -3,7 +3,7 @@ import { heroData } from "../../data/hero";
 
 export function Hero() {
   return (
-    <section className="relative w-full min-h-[90vh] md:min-h-screen bg-background flex flex-col justify-between overflow-hidden pt-24 md:pt-0">
+    <section className="relative w-full min-h-[90vh] md:min-h-screen bg-background flex flex-col justify-between overflow-hidden pt-32 lg:pt-48">
       
       {/* Vídeo de Fundo (Alinhado à direita com degradê para a esquerda - Sintaxe Tailwind v4) */}
       <div className="absolute inset-0 z-0 pointer-events-none bg-background">
@@ -27,7 +27,7 @@ export function Hero() {
       {/* Bloco de Texto Principal */}
       <div className="container relative z-10 px-4 mx-auto flex-1 flex flex-col justify-center">
         <div className="max-w-2xl mt-12 md:mt-0">
-                <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-bold text-foreground leading-[1.1] mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-foreground leading-[1.1] mb-6">
             {heroData.headline}
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-xl leading-relaxed">
@@ -51,9 +51,9 @@ export function Hero() {
           {heroData.metrics.map((metric, idx) => (
             <div 
               key={idx} 
-              className="bg-surface/90 backdrop-blur-md border border-border/50 border-b-0 rounded-t-3xl p-8 lg:p-10 pb-12 transition-transform hover:-translate-y-2"
+              className="bg-surface/90 backdrop-blur-md border border-border/50 border-b-0 rounded-t-3xl p-6 lg:p-8 pb-10 transition-transform hover:-translate-y-2"
             >
-              <h4 className="text-amber text-4xl lg:text-5xl font-bold mb-3">
+              <h4 className="text-amber text-3xl lg:text-4xl font-bold mb-3">
                 {metric.value}
               </h4>
               <p className="text-foreground/80 text-sm md:text-base leading-relaxed">
