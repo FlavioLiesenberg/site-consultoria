@@ -1,4 +1,4 @@
-import { Mail, MapPin, TrendingUp } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { footer, site } from "@/data/content";
 
 export function Footer() {
@@ -7,14 +7,18 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr]">
           <div>
+            {/* ÁREA DA LOGO */}
             <div className="flex items-center gap-3">
-              <span className="flex size-9 items-center justify-center rounded-md bg-brand text-brand-foreground">
-                <TrendingUp className="size-5" />
-              </span>
-              <span className="font-display text-sm font-semibold tracking-[0.22em]">
+              <img
+                src="/imagens/logo.png"
+                alt="L2 Academy Logo"
+                className="h-9 w-auto object-contain"
+              />
+              <span className="font-display text-sm font-semibold tracking-[0.22em] text-foreground">
                 L2 ACADEMY
               </span>
             </div>
+            
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
               Consultoria sênior em Reestruturação Financeira (Turnaround) e CFO as a Service.
             </p>

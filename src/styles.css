@@ -5,9 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * L2 Academy design system — navy institucional.
- * Fundos navy profundos, acento azul institucional. Cores sólidas, sem gradientes de marca.
- * All colors in oklch. Never hardcode colors in components.
+ * L2 Academy Design System — Navy Institucional & Financeiro.
+ * Arquitetura de cores em OKLCH (Tailwind CSS v4) otimizada para A11y.
  */
 
 @theme inline {
@@ -41,6 +40,12 @@
   --color-brand: var(--brand);
   --color-brand-strong: var(--brand-strong);
   --color-brand-foreground: var(--brand-foreground);
+  
+  --color-emerald: var(--emerald);
+  --color-emerald-foreground: var(--emerald-foreground);
+  --color-amber: var(--amber);
+  --color-amber-foreground: var(--amber-foreground);
+
   --color-warning: var(--warning);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
@@ -67,57 +72,61 @@
 :root {
   --radius: 0.5rem;
 
-  --background: oklch(0.21 0.062 264);
-  --foreground: oklch(0.95 0.008 250);
-  --surface: oklch(0.27 0.055 260);
-  --surface-foreground: oklch(0.95 0.008 250);
-  --card: oklch(0.28 0.053 260);
-  --card-foreground: oklch(0.95 0.008 250);
-  --popover: oklch(0.27 0.055 260);
-  --popover-foreground: oklch(0.95 0.008 250);
+  --background: oklch(0.18 0.05 262);
+  --foreground: oklch(0.96 0.008 250);
+  --surface: oklch(0.24 0.05 260);
+  --surface-foreground: oklch(0.96 0.008 250);
+  --card: oklch(0.25 0.048 260);
+  --card-foreground: oklch(0.96 0.008 250);
+  --popover: oklch(0.24 0.05 260);
+  --popover-foreground: oklch(0.96 0.008 250);
 
   --primary: oklch(0.56 0.088 248);
-  --primary-foreground: oklch(0.97 0.006 250);
+  --primary-foreground: oklch(0.98 0.005 250);
 
-  --secondary: oklch(0.33 0.05 258);
+  --secondary: oklch(0.30 0.048 258);
   --secondary-foreground: oklch(0.95 0.008 250);
 
-  --muted: oklch(0.31 0.048 258);
-  --muted-foreground: oklch(0.76 0.02 250);
+  --muted: oklch(0.28 0.045 258);
+  --muted-foreground: oklch(0.80 0.018 250);
 
-  --accent: oklch(0.35 0.06 252);
+  --accent: oklch(0.32 0.055 252);
   --accent-foreground: oklch(0.96 0.008 250);
 
   --brand: oklch(0.56 0.088 248);
   --brand-strong: oklch(0.48 0.082 250);
   --brand-foreground: oklch(0.98 0.005 250);
-  --warning: oklch(0.79 0.13 78);
 
-  --destructive: oklch(0.6 0.19 25);
+  --emerald: oklch(0.68 0.17 162);             
+  --emerald-foreground: oklch(0.98 0.005 250);
+  --amber: oklch(0.75 0.14 75);                
+  --amber-foreground: oklch(0.18 0.05 262);
+
+  --warning: oklch(0.79 0.13 78);
+  --destructive: oklch(0.60 0.19 25);
   --destructive-foreground: oklch(0.98 0.005 250);
 
-  --border: oklch(0.35 0.05 256);
+  --border: oklch(0.32 0.045 256);
   --border-strong: oklch(0.46 0.06 250);
-  --input: oklch(0.34 0.05 256);
-  --ring: oklch(0.56 0.088 248);
+  --input: oklch(0.30 0.045 256);
+  --ring: oklch(0.68 0.17 162);
 
-  --chart-1: oklch(0.56 0.088 248);
-  --chart-2: oklch(0.68 0.07 245);
-  --chart-3: oklch(0.44 0.07 255);
-  --chart-4: oklch(0.79 0.13 78);
-  --chart-5: oklch(0.6 0.19 25);
+  --chart-1: oklch(0.68 0.17 162);  
+  --chart-2: oklch(0.56 0.088 248); 
+  --chart-3: oklch(0.75 0.14 75);   
+  --chart-4: oklch(0.44 0.07 255);
+  --chart-5: oklch(0.60 0.19 25);
 
-  --sidebar: oklch(0.23 0.06 263);
+  --sidebar: oklch(0.20 0.05 263);
   --sidebar-foreground: oklch(0.95 0.008 250);
   --sidebar-primary: oklch(0.56 0.088 248);
   --sidebar-primary-foreground: oklch(0.98 0.005 250);
-  --sidebar-accent: oklch(0.33 0.05 258);
+  --sidebar-accent: oklch(0.30 0.05 258);
   --sidebar-accent-foreground: oklch(0.95 0.008 250);
-  --sidebar-border: oklch(0.35 0.05 256);
+  --sidebar-border: oklch(0.32 0.045 256);
   --sidebar-ring: oklch(0.56 0.088 248);
 
-  --shadow-elevated: 0 20px 48px -30px oklch(0 0 0 / 0.7);
-
+  --shadow-elevated: 0 20px 48px -20px oklch(0 0 0 / 0.85);
 }
 
 .dark {
@@ -139,25 +148,58 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  h1,
-  h2,
-  h3,
-  h4 {
+  h1, h2, h3, h4 {
     font-family: var(--font-display);
     letter-spacing: -0.02em;
   }
 
   ::selection {
-    background: color-mix(in oklab, var(--brand) 45%, transparent);
+    background: color-mix(in oklab, var(--emerald) 35%, transparent);
+    color: var(--color-foreground);
+  }
+
+  /* FORÇA O LAYOUT DE TODOS OS COMPONENTES PARA 1400PX */
+  .container, .max-w-7xl {
+    width: 100% !important;
+    max-width: 1400px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    .container, .max-w-7xl {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 }
+
+/* Utilitários Customizados */
 
 @utility surface-panel {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-elevated);
+}
+
+@utility glass-card {
+  background: color-mix(in oklab, var(--color-surface) 75%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border);
+}
+
+@utility glow-border {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    border-color: color-mix(in oklab, var(--color-emerald) 60%, transparent);
+    box-shadow: 0 0 20px -5px color-mix(in oklab, var(--color-emerald) 25%, transparent);
+  }
 }
 
 @utility hero-canvas {
@@ -168,23 +210,23 @@
 @utility grid-lines {
   background-image: linear-gradient(
       to right,
-      color-mix(in oklab, var(--border) 40%, transparent) 1px,
+      color-mix(in oklab, var(--border) 35%, transparent) 1px,
       transparent 1px
     ),
     linear-gradient(
       to bottom,
-      color-mix(in oklab, var(--border) 40%, transparent) 1px,
+      color-mix(in oklab, var(--border) 35%, transparent) 1px,
       transparent 1px
     );
   background-size: 80px 80px;
 }
 
 @utility eyebrow {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-brand);
+  color: var(--color-emerald);
 }
 
 @utility reveal {

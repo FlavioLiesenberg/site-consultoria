@@ -18,7 +18,7 @@ Estrutura da Landing Page:
 
 - Logo "L2 ACADEMY" (estilo corporativo minimalista).
 
-- Links de ancoragem: "Soluções", "Metodologia", "Casos", "Sobre".
+- Links de ancoragem: "Soluções", "Metodologia", "Casos", "Nosso Time".
 
 - Botão CTA principal: "Agendar Diagnóstico de Caixa" (destaque visual).
 
@@ -30,7 +30,7 @@ Estrutura da Landing Page:
 
 - CTAs Duplos: "Agendar Diagnóstico sem Custo" (Primário) e "Conhecer Soluções" (Secundário).
 
-- Banner de Prova Social com badges: "+R$ 50M em Passivos Renegociados", "Gestão Interina de Elite", "Atendimento Presencial e Remoto".
+- Banner de Prova Social com badges: "+R$ 12M em Passivos Renegociados", "Gestão Interina de Elite", "Atendimento Presencial e Remoto".
 
 3. SEÇÃO "DORES DO EMPRESÁRIO" (Grid de Cards):
 
@@ -58,7 +58,7 @@ Estrutura da Landing Page:
 
 5. METODOLOGIA DE ATAQUE (Stepper / Timeline em 4 Passos):
 
-- Passo 1: Diagnóstico UTI (Mapeamento de liquidez e estancamento de vazamentos em 14 dias)
+- Passo 1: Diagnóstico (Mapeamento de liquidez e estancamento de vazamentos em 14 dias)
 
 - Passo 2: Estabilização de Caixa (Renegociação de fornecedores e controle do burn rate)
 

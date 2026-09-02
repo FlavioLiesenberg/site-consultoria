@@ -22,19 +22,19 @@ import {
 
 export const site = {
   brand: "L2 ACADEMY",
-  brandSuffix: "Flávio Liesenberg Consulting",
-  whatsapp: "5511999999999",
+  brandSuffix: "Consultoria Financeira e Reestruturação de empresas",
+  whatsapp: "5547991640213",
   whatsappMessage:
     "Olá, gostaria de agendar um Diagnóstico de Caixa com a L2 Academy.",
-  email: "contato@l2academy.com.br",
-  city: "São Paulo — SP | Atendimento nacional",
+  email: "flavio@l2consultorias.com.br",
+  city: "Joinville — SC | Atendimento nacional",
 };
 
 export const navLinks = [
   { label: "Soluções", href: "#solucoes" },
   { label: "Metodologia", href: "#metodologia" },
   { label: "Casos", href: "#casos" },
-  { label: "Sobre", href: "#sobre" },
+  { label: "Nosso Time", href: "#sobre" },
 ];
 
 export const hero = {
@@ -46,14 +46,14 @@ export const hero = {
   primaryCta: "Agendar Diagnóstico sem Custo",
   secondaryCta: "Conhecer Soluções",
   badges: [
-    { icon: HandCoins, label: "+R$ 50M em Passivos Renegociados" },
+    { icon: HandCoins, label: "+R$ 12M em Passivos Renegociados" },
     { icon: Briefcase, label: "Gestão Interina de Elite" },
     { icon: Users, label: "Atendimento Presencial e Remoto" },
   ] satisfies { icon: LucideIcon; label: string }[],
   metrics: [
-    { value: "+R$ 50M", label: "Passivos renegociados" },
-    { value: "14 dias", label: "Para o diagnóstico UTI" },
-    { value: "20+ anos", label: "Em cenários críticos" },
+    { value: "+R$ 12M", label: "Passivos renegociados" },
+    { value: "14 dias", label: "Para o diagnóstico" },
+    { value: "10+ anos", label: "Em cenários críticos" },
     { value: "3 setores", label: "Saúde, serviços e varejo" },
   ],
 };
@@ -110,12 +110,13 @@ export const solutions: { title: string; subtitle: string; items: Solution[] } =
       title: "CFO as a Service",
       tagline: "Direção financeira sênior sem custo de estrutura fixa",
       description:
-        "Assumimos a direção financeira da empresa em regime interino, com rotina, cadência e responsabilidade sobre os números.",
+        "Com nosso CFO as a Service, você conta com um CFO especializado que aplica nossa metodologia na sua empresa, trazendo a visão estratégica que você precisa para impulsionar seus resultados.",
       deliverables: [
-        "Direção financeira interina (Interim CFO)",
+        "Análise e construção de precificação",
         "DRE Gerencial por unidade de negócio",
-        "Fluxo de caixa projetado (13 semanas)",
-        "Comitê financeiro semanal com o dono",
+        "Fluxo de caixa projetado",
+        "Planejamento orçamentário",
+        "Implantação de KPIs e painéis de controle de margem",
       ],
     },
     {
@@ -130,6 +131,7 @@ export const solutions: { title: string; subtitle: string; items: Solution[] } =
         "Renegociação com bancos e fornecedores",
         "Negociação de haircut e alongamento",
         "Controle de burn rate semanal",
+        "Revisão de pricing e canais de venda",
       ],
     },
     {
@@ -144,6 +146,7 @@ export const solutions: { title: string; subtitle: string; items: Solution[] } =
         "Preparação de data room e dossiê",
         "Condução de negociação com compradores",
         "Estruturação de earn-out e garantias",
+        "Acompanhamento em rodadas de negociação",
       ],
     },
     {
@@ -158,6 +161,7 @@ export const solutions: { title: string; subtitle: string; items: Solution[] } =
         "Compliance financeiro e antifraude",
         "Formação e gestão do time financeiro",
         "Dashboards e rotinas de conselho",
+        "Auditoria de riscos fiscais e trabalhistas",
       ],
     },
   ],
@@ -171,8 +175,8 @@ export const methodology = {
     {
       icon: Gauge,
       step: "Passo 01",
-      title: "Diagnóstico UTI",
-      duration: "Primeiros 14 dias",
+      title: "Diagnóstico",
+      duration: "Primeiros 20 dias",
       description:
         "Mapeamento de liquidez, identificação e estancamento dos vazamentos de caixa em até 14 dias.",
     },
@@ -180,9 +184,9 @@ export const methodology = {
       icon: Banknote,
       step: "Passo 02",
       title: "Estabilização de Caixa",
-      duration: "Dias 15 a 60",
+      duration: "Dias 21 a 60",
       description:
-        "Renegociação de fornecedores e credores, controle do burn rate e reconstrução do capital de giro.",
+        "Renegociação de fornecedores e credores, controle do queima de caixa e reconstrução do capital de giro.",
     },
     {
       icon: BarChart3,
@@ -260,21 +264,65 @@ export const cases = {
   ],
 };
 
+// NOVA ESTRUTURA PARA O TIME (ACORDEÃO EXPANSÍVEL)
 export const about = {
-  eyebrow: "Sobre o consultor",
-  name: "Flávio Liesenberg",
-  role: "Consultor Sênior • Interim Manager & CFO as a Service",
-  paragraphs: [
-    "Mais de duas décadas conduzindo operações financeiras em cenários críticos, atuando como Interim Manager e CFO em empresas de saúde, serviços e varejo.",
-    "Especialista em reestruturação de passivos, recuperação de margem e implantação de governança financeira em empresas familiares e de médio porte que cresceram mais rápido do que sua gestão.",
-    "Atuação hands-on: entra na operação, assume a cadeira, reorganiza o time e sai deixando processo, rotina e autonomia instalados.",
-  ],
-  highlights: [
-    "Interim CFO em operações de R$ 20M a R$ 300M de faturamento",
-    "+R$ 50M em passivos auditados e renegociados",
-    "Condução de M&A e valuation de carteiras de clientes",
-    "Implantação de governança e comitês financeiros",
-  ],
+  eyebrow: "Nosso Time",
+  title: "Especialistas em Turnaround e Gestão de Crise",
+  members: [
+    {
+      id: "flavio",
+      name: "Flávio Liesenberg",
+      role: "Consultor Sênior • Interim Manager & CFO as a Service",
+      image: "/imagens/flavio.jpg", // Substitua pelo caminho real da sua foto
+      shortDescription:
+        "Mais de duas décadas conduzindo operações financeiras em cenários críticos, atuando como Interim Manager e CFO em empresas de saúde, serviços e varejo.",
+      paragraphs: [
+        "Mais de duas décadas conduzindo operações financeiras em cenários críticos, atuando como Interim Manager e CFO em empresas de saúde, serviços e varejo.",
+        "Especialista em reestruturação de passivos, recuperação de margem e implantação de governança financeira em empresas familiares e de médio porte que cresceram mais rápido do que sua gestão.",
+        "Atuação hands-on: entra na operação, assume a cadeira, reorganiza o time e sai deixando processo, rotina e autonomia instalados.",
+      ],
+      highlights: [
+        "Interim CFO em operações de R$ 20M a R$ 300M de faturamento",
+        "+R$ 12M em passivos auditados e renegociados",
+        "Condução de M&A e valuation de carteiras de clientes",
+        "Implantação de governança e comitês financeiros",
+      ],
+    },
+    {
+      id: "membro-2",
+      name: "Nome do Parceiro 2",
+      role: "Especialista em Planejamento Estratégico",
+      image: "/images/socio2.jpg", // Substitua pelo caminho real
+      shortDescription:
+        "Com mais de 27 anos de experiência, especialista em planejamento estratégico, marketing e gestão corporativa.",
+      paragraphs: [
+        "Com vasta experiência conduzindo o crescimento e a estruturação de grandes empresas no mercado nacional.",
+        "Foco em estratégia operacional para garantir que a reestruturação financeira esteja perfeitamente alinhada com as metas de negócio da companhia."
+      ],
+      highlights: [
+        "Especialista em Turnaround de Negócios",
+        "Gestão de equipes de alta performance",
+        "Planejamento estratégico de longo prazo"
+      ],
+    },
+    {
+      id: "membro-3",
+      name: "Nome do Parceiro 3",
+      role: "Consultor de Controladoria",
+      image: "/images/socio3.jpg", // Substitua pelo caminho real
+      shortDescription:
+        "Consultor e administrador de empresas com 20 anos de carreira. Especialista em controladoria e compliance.",
+      paragraphs: [
+        "Consultor e administrador de empresas com 20 anos de carreira. Especialista em controladoria, planejamento e estruturação de dados.",
+        "Garante a segurança da informação e a precisão dos relatórios que baseiam a tomada de decisão em cenários de crise."
+      ],
+      highlights: [
+        "Controladoria e Compliance",
+        "Estruturação de DRE Gerencial",
+        "Auditoria de processos internos"
+      ],
+    }
+  ]
 };
 
 export const form = {
@@ -316,5 +364,5 @@ export const footer = {
     "Todas as informações compartilhadas são tratadas sob sigilo profissional. Contratos de confidencialidade (NDA) disponíveis desde o primeiro contato.",
   lgpd:
     "Tratamos dados pessoais conforme a Lei Geral de Proteção de Dados (LGPD — Lei 13.709/2018), exclusivamente para contato comercial e qualificação de atendimento.",
-  rights: "© 2026 L2 Academy — Flávio Liesenberg Consulting. Todos os direitos reservados.",
+  rights: "© 2026 L2 Academy — L2 Academy. Todos os direitos reservados.",
 };
