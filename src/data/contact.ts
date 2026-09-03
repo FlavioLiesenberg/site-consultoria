@@ -27,7 +27,7 @@ export const contactData = {
   ],
   challengeOptions: [
     "Caixa / Liquidez",
-    "Dívidas e Cedores",
+    "Dívidas e Credores",
     "Gestão e Liderança",
     "Outros"
   ]
