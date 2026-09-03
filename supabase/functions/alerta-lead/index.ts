@@ -14,7 +14,7 @@ serve(async (req) => {
     },
     body: JSON.stringify({
       from: "onboarding@resend.dev", 
-      to: "seu-email@l2consultorias.com.br", // <-- COLOQUE SEU E-MAIL AQUI
+      to: "flavio@l2consultorias.com.br", // <-- COLOQUE SEU E-MAIL AQUI
       subject: `🚨 Novo Lead: ${lead.name}`,
       html: `
         <h2>Novo pedido de Diagnóstico de Caixa!</h2>
