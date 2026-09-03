@@ -124,7 +124,7 @@ export function ContactForm() {
                   <CheckCircle2 className="w-12 h-12 text-emerald mb-3" />
                   <h3 className="text-2xl font-bold text-foreground">Recebemos sua solicitação</h3>
                   <p className="text-base text-muted-foreground mb-6">
-                    Nossa equipe entrará em contato em até 1 dia útil para agendar o Diagnóstico de Caixa.
+                    Nossa equipe entrará em contato em até 1 dia útil para agendar o seu Diagnóstico.
                   </p>
                   <Button size="lg" className="h-12 px-6 text-base bg-emerald hover:bg-emerald/90 text-white" onClick={() => setDone(false)}>
                     Enviar outra solicitação
