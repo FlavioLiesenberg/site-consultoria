@@ -60,7 +60,7 @@ export function Header() {
         {/* BOTÃO DESKTOP (ALTURA E FONTE AUMENTADAS) */}
         <div className="hidden lg:block">
           <Button variant="hero" size="lg" className="h-12 text-base font-bold px-6" asChild>
-            <a href="#contato">Agendar Diagnóstico de Caixa</a>
+            <a href="#contato">Agendar Diagnóstico</a>
           </Button>
         </div>
 
@@ -92,7 +92,7 @@ export function Header() {
             ))}
             <Button variant="hero" size="lg" className="mt-4 h-14 text-lg font-bold" asChild>
               <a href="#contato" onClick={() => setOpen(false)}>
-                Agendar Diagnóstico de Caixa
+                Agendar Diagnóstico
               </a>
             </Button>
           </nav>

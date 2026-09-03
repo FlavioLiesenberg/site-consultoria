@@ -25,7 +25,7 @@ export const site = {
   brandSuffix: "Consultoria Financeira e Reestruturação de empresas",
   whatsapp: "5547991640213",
   whatsappMessage:
-    "Olá, gostaria de agendar um Diagnóstico de Caixa com a L2 Academy.",
+    "Olá, gostaria de agendar um Diagnóstico com a L2 Academy.",
   email: "flavio@l2consultorias.com.br",
   city: "Joinville — SC | Atendimento nacional",
 };
@@ -337,8 +337,8 @@ export const form = {
   ],
   challengeOptions: [
     { value: "caixa", label: "Caixa / Liquidez" },
-    { value: "dividas", label: "Dívidas e credores" },
-    { value: "margem", label: "Margem e precificação" },
+    { value: "dividas", label: "Dívidas e Credores" },
+    { value: "gestao", label: "Gestão e Liderança" },
     { value: "outros", label: "Outros" },
   ],
   submitLabel: "Solicitar Diagnóstico Estratégico",

@@ -20,7 +20,7 @@ Estrutura da Landing Page:
 
 - Links de ancoragem: "Soluções", "Metodologia", "Casos", "Nosso Time".
 
-- Botão CTA principal: "Agendar Diagnóstico de Caixa" (destaque visual).
+- Botão CTA principal: "Agendar Diagnóstico" (destaque visual).
 
 2. HERO SECTION (Dobra Principal):
 
