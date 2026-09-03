@@ -245,7 +245,7 @@ export const cases = {
   testimonials: [
     {
       quote:
-        "Em duas semanas entendemos, pela primeira vez, para onde o dinheiro estava indo. Em três meses saímos do cheque especial.",
+        "Em duas semanas entendemos, pela primeira vez, para onde o dinheiro estava indo. Em quatro meses saímos do cheque especial que eramos dependentes a mais de dois anos.",
       author: "Sócio-fundador",
       role: "Rede de clínicas — SC",
     },
