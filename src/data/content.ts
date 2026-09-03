@@ -100,9 +100,9 @@ export type Solution = {
 };
 
 export const solutions: { title: string; subtitle: string; items: Solution[] } = {
-  title: "Soluções desenhadas para retomar o controle",
+  title: "Como colocamos sua empresa de volta nos trilhos, lado a lado com você.",
   subtitle:
-    "Atuação sênior, mão na massa, com responsabilidade sobre número e resultado — não apenas relatório.",
+    "Não entregamos diagnósticos teóricos para você resolver sozinho. Entramos na sua operação, organizamos as contas e assumimos a responsabilidade pelos números ao seu lado.",
   items: [
     {
       id: "cfo",
@@ -137,7 +137,7 @@ export const solutions: { title: string; subtitle: string; items: Solution[] } =
     {
       id: "ma",
       icon: Scale,
-      title: "M&A e Valuation de Carteiras",
+      title: "M&A e Valuation",
       tagline: "Vender ativo bom pelo preço certo",
       description:
         "Avaliação técnica e condução de venda de ativos e carteiras de clientes com segurança jurídica e financeira.",
@@ -152,16 +152,16 @@ export const solutions: { title: string; subtitle: string; items: Solution[] } =
     {
       id: "governance",
       icon: ShieldCheck,
-      title: "Blindagem e Governance",
-      tagline: "Processo, compliance e autonomia do time",
+      title: "Consultoria 360º",
+      tagline: "SOLUÇÃO SOB MEDIDA E EXCLUSIVA PARA A SUA NECESSIDADE",
       description:
-        "Estruturamos controles, alçadas e rotinas para que a empresa não dependa do heroísmo do dono.",
+        "Atuamos em cada área da sua empresa com um plano sob medida. Conectamos o desenvolvimento do time a disciplina do caixa para o seu negócio rodar com lucro sem depender do heroísmo do dono.",
       deliverables: [
-        "Desenho de processos e alçadas",
-        "Compliance financeiro e antifraude",
-        "Formação e gestão do time financeiro",
-        "Dashboards e rotinas de conselho",
-        "Auditoria de riscos fiscais e trabalhistas",
+        "Diagnóstico completo do negócio",
+        "Mapeamento de gargalos em todas as áreas da empresa",
+        "Construção de indicadores, dashboards e rotinas de gestão",
+        "Treinamento e capacitação de equipes e gestores",
+        "Acompanhamento executivo lado a lado com o dono",
       ],
     },
   ],
@@ -220,21 +220,21 @@ export const cases = {
   items: [
     {
       icon: Building2,
-      sector: "Rede de saúde • 4 unidades",
-      headline: "R$ 18M de passivo reestruturado em 7 meses",
+      sector: "Rede de saúde • 3 unidades",
+      headline: "R$ 7M de passivo reestruturado em 3 meses",
       result: "Haircut médio de 32% e caixa positivo a partir do 4º mês.",
     },
     {
       icon: BadgeDollarSign,
-      sector: "Varejo multimarcas",
-      headline: "Margem bruta de 21% para 34%",
-      result: "Revisão de precificação, mix e CMV com corte de SKUs deficitários.",
+      sector: "Varejo de moda multimarcas",
+      headline: "Crescimento de 10x no Faturamento",
+      result: "Revisão de precificação, mix e CMV com treinamentos e estratégias de venda.",
     },
     {
       icon: Handshake,
-      sector: "Empresa de serviços B2B",
-      headline: "Venda de carteira com valuation 2,4x acima da oferta inicial",
-      result: "Estruturação de dossiê, concorrência entre compradores e earn-out.",
+      sector: "Clinica Ocupacional",
+      headline: "Retomada da confiança de stakeholders",
+      result: "Renegociação de prazos, alinhamento de expectativas e cumprimento de compromissos.",
     },
   ] satisfies {
     icon: LucideIcon;
@@ -245,21 +245,21 @@ export const cases = {
   testimonials: [
     {
       quote:
-        "Em duas semanas entendemos, pela primeira vez, para onde o dinheiro estava indo. Em seis meses saímos do cheque especial.",
+        "Em duas semanas entendemos, pela primeira vez, para onde o dinheiro estava indo. Em três meses saímos do cheque especial.",
       author: "Sócio-fundador",
-      role: "Rede de clínicas — SP",
+      role: "Rede de clínicas — SC",
     },
     {
       quote:
-        "O Flávio senta na cadeira de CFO e assume o número. Não é consultoria de slide, é execução dentro da operação.",
-      author: "CEO",
-      role: "Distribuidora de serviços — RS",
+        "Em janeiro eu pensava em fechar a loja, em fevereiro iniciamos a consultoria e em junho meu faturamento já havia crescido 10x. Em agosto fizemos nosso recorde de vendas histórico",
+      author: "Dona de Loja",
+      role: "Loja de moda infantil — SC",
     },
     {
       quote:
-        "A renegociação com credores devolveu o fôlego que precisávamos para voltar a crescer com segurança.",
-      author: "Diretora financeira",
-      role: "Varejo — PR",
+        "A operação chegou a travar por falta de fornecimento de insumos básicos... A renegociação com credores devolveu o fôlego que precisávamos para voltar a operar e crescer com segurança.",
+      author: "Gerente Administrativa",
+      role: "Rede de clínicas — SC",
     },
   ],
 };

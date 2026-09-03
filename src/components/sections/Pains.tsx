@@ -4,7 +4,7 @@ import { Reveal } from "@/components/Reveal";
 const painsData = {
   eyebrow: "Diagnóstico Inicial",
   title: "Sua empresa está presa em algum destes ciclos?",
-  subtitle: "Quando o caixa aperta, o problema raramente é falta de faturamento — é não ter clareza total de onde cada real seu está indo parar.",
+  subtitle: "Vender bastante não garante conta cheia no fim do mês. Se o dinheiro desaparece sem você entender a razão, a sua empresa pode estar presa em uma destas armadilhas:",
   items: [
     {
       icon: AlertTriangle,
